@@ -29,12 +29,14 @@ export default function Home() {
         <span style={{ fontFamily: "var(--font-display)" }} className="text-2xl text-green-800 tracking-wide">
           ForecastIQ
         </span>
-        <a
-          href="mailto:hello@wikolabs.com?subject=ForecastIQ — Demande de démo"
-          className="bg-green-700 text-white px-5 py-2 rounded text-sm font-bold hover:bg-green-800 transition"
-        >
-          Demander une démo
-        </a>
+        <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
+          <a href="https://calendly.com/wikolabs" target="_blank" rel="noopener noreferrer" className="bg-green-700 text-white px-5 py-2 rounded text-sm font-bold hover:bg-green-800 transition">
+            📅 Réserver un créneau →
+          </a>
+          <a href="https://wa.me/261386626100?text=Bonjour%2C%20je%20souhaite%20discuter%20de%20ForecastIQ%20avec%20Wikolabs." target="_blank" rel="noopener noreferrer" className="bg-green-700 text-white px-5 py-2 rounded text-sm font-bold hover:bg-green-800 transition" style={{ background: "#25d366", borderColor: "#25d366" }}>
+            💬 WhatsApp →
+          </a>
+        </div>
       </nav>
 
       {/* Hero */}
@@ -48,12 +50,14 @@ export default function Home() {
         <p className="text-lg text-slate-600 max-w-2xl mx-auto mb-10">
           ForecastIQ modélise vos prévisions de ventes, détecte les anomalies en temps réel et vous alerte avant que le problème devienne une crise.
         </p>
-        <a
-          href="mailto:hello@wikolabs.com?subject=ForecastIQ — Demande de démo"
-          className="inline-block bg-green-700 text-white px-8 py-4 rounded font-bold text-base hover:bg-green-800 transition shadow-lg"
-        >
-          Voir une démo live
-        </a>
+        <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
+          <a href="https://calendly.com/wikolabs" target="_blank" rel="noopener noreferrer" className="inline-block bg-green-700 text-white px-8 py-4 rounded font-bold text-base hover:bg-green-800 transition shadow-lg">
+            📅 Réserver un créneau →
+          </a>
+          <a href="https://wa.me/261386626100?text=Bonjour%2C%20je%20souhaite%20discuter%20de%20ForecastIQ%20avec%20Wikolabs." target="_blank" rel="noopener noreferrer" className="inline-block bg-green-700 text-white px-8 py-4 rounded font-bold text-base hover:bg-green-800 transition shadow-lg" style={{ background: "#25d366", borderColor: "#25d366" }}>
+            💬 WhatsApp →
+          </a>
+        </div>
       </section>
 
       {/* Chart Mockup */}
@@ -119,29 +123,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonial */}
-      <section className="max-w-3xl mx-auto px-6 py-16 text-center">
-        <blockquote>
-          <p className="text-2xl text-green-900 italic leading-snug mb-6" style={{ fontFamily: "var(--font-display)" }}>
-            &ldquo;ForecastIQ nous a alertés 3 semaines à l&rsquo;avance d&rsquo;un problème sur notre pipeline. On a pu corriger avant que ça impacte le trimestre.&rdquo;
-          </p>
-          <footer className="text-slate-500 text-sm">
-            <strong className="text-green-800">Camille Renard</strong> — CFO, Nexora SAS
-          </footer>
-        </blockquote>
-      </section>
-
       {/* CTA */}
       <section className="bg-green-700 py-14 text-center px-6">
         <h2 style={{ fontFamily: "var(--font-display)" }} className="text-4xl text-white mb-4">
           Anticipez. N&rsquo;attendez plus.
         </h2>
-        <a
-          href="mailto:hello@wikolabs.com?subject=ForecastIQ — Demande de démo"
-          className="inline-block bg-white text-green-800 px-8 py-4 rounded font-bold hover:bg-green-50 transition shadow"
-        >
-          Parler à un expert
-        </a>
+        <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
+          <a href="https://calendly.com/wikolabs" target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-green-800 px-8 py-4 rounded font-bold hover:bg-green-50 transition shadow">
+            📅 Réserver un créneau →
+          </a>
+          <a href="https://wa.me/261386626100?text=Bonjour%2C%20je%20souhaite%20discuter%20de%20ForecastIQ%20avec%20Wikolabs." target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-green-800 px-8 py-4 rounded font-bold hover:bg-green-50 transition shadow" style={{ background: "#25d366", borderColor: "#25d366" }}>
+            💬 WhatsApp →
+          </a>
+        </div>
       </section>
 
       <footer className="text-center py-5 text-slate-400 text-sm bg-white border-t border-green-100">
