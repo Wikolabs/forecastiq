@@ -15,21 +15,9 @@ services:
       GROQ_API_KEY: ${GROQ_API_KEY:-}
       GEMINI_API_KEY: ${GEMINI_API_KEY:-}
     networks:
-      - forecastiq-net
-
-  forecastiq:
-    image: ghcr.io/wikolabs/forecastiq:latest
-    container_name: forecastiq
-    restart: unless-stopped
-    ports:
-      - "3014:3000"
-    environment:
-      BACKEND_URL: "http://forecastiq-backend:8000"
-    depends_on:
-      - forecastiq-backend
-    networks:
-      - forecastiq-net
-
+  wkdemo_net:
+    name: wkdemo-net
+    external: true
 networks:
   forecastiq-net:
     name: forecastiq-net
