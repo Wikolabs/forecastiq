@@ -1,3 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = { output: "standalone" };
+﻿/** @type {import('next').NextConfig} */
+const nextConfig = {
+  basePath: '/offers/forecastiq/demo',
+  output: 'standalone',
+};
 export default nextConfig;
